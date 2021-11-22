@@ -1,0 +1,112 @@
+package com.project.pages;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WishlistPages {
+
+
+public WebDriver driver;
+WebElement ClickOnWishlist ;
+WebElement CLickOnProduct ;
+WebElement Remove_product;
+WebElement AddToCart;
+WebElement Empty_Wishlist;
+
+String baseUrl = null;
+String expectedTitle = null;
+String actualTitle = null;
+Logger log = Logger.getLogger(WishlistPages.class.getName());
+
+public void Login() throws InterruptedException {
+
+	JavascriptExecutor js =(JavascriptExecutor) driver;
+	js.executeScript("window.scrollBy(0, 400)");
+
+	WebElement login = driver.findElement(By.xpath("/html/body/header/div[1]/div/div/div[1]/ul/li[4]/a/i"));
+	//WebElement logout =driver.findElement(By.xpath("/html/body/header/div[1]/div/div/div[1]/ul/li[5]/a"));
+	login.click();
+
+//	Actions action =new Actions(driver);
+	// action.moveToElement(mouceover).click().perform();
+	// action.moveToElement(rowselector).click().perform();
+	WebElement email = driver.findElement(By.id("exampleInputEmail1"));
+	WebElement password = driver.findElement(By.id("exampleInputPassword1"));
+	WebElement loginButton = driver.findElement(By.name("login"));
+	
+	email.sendKeys("Test1@gmail.com");
+	password.sendKeys("12345678");
+	loginButton.click();
+	log.info("Login to site ");	
+}
+public void wishlist_button() throws InterruptedException {
+	
+	
+	// Click on Wishlist button
+	WebElement wishlist = driver.findElement(By.xpath("/html/body/header/div[1]/div/div/div[1]/ul/li[3]/a"));
+	wishlist.click();
+	
+	
+	
+	// Scroll down
+	JavascriptExecutor js1 =(JavascriptExecutor) driver;
+	js1.executeScript("window.scrollBy(0, 400)");
+	log.info("Click on Wishlist ");
+	//Thread.sleep(4000);
+	
+
+
+}
+
+
+public void Remove_product() {
+	
+	
+	// Remove the product from Wishlist
+	WebElement remove = driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/div/table/tbody/tr[1]/td[3]/a"));
+	remove.click();
+	log.info("Product removed from wishlist");
+	
+	// Alert handling
+	driver.switchTo().alert().accept();
+
+}
+
+public void AddToCart()
+{
+	  WebElement AddToCart = driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/div/table/tbody/tr[1]/td[3]/a"));
+		AddToCart.click();
+		log.info("Product added to cart successfully ");
+		
+}
+
+
+public void CLickOnProduct()
+{
+	  WebElement Product = driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div[1]/a"));
+	  	Product.click();
+		log.info("Product details view ");
+		driver.navigate().back(); 
+		
+}
+
+
+public void initializeBrowser() {
+System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
+driver = new ChromeDriver();
+driver.manage().window().maximize();
+baseUrl = "http://localhost/shopping/login.php";
+    driver.get(baseUrl);
+}
+ public void closeBrowser()
+ {
+	 driver.quit();
+ }
+
+
+
+}

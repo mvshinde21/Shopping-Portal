@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.project.utility.Listeners"></listener>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+<test name="Test">
+<classes>
+
+<!-- <class name="com.project.testcase.RegisterPageTest"/> -->
+<class name="com.project.testcase.BooksPageTest"/>
+<class name="com.project.testcase.LoginPageTest"/>
+<class name="com.project.testcase.ElectronicsPageTest"/>
+<class name="com.project.testcase.FashionPageTest"/>
+<class name="com.project.testcase.LoggedOutUserTest"/>
+<class name="com.project.testcase.CartHomePageTest"/>
+
+</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

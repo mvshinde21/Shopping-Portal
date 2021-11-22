@@ -1,0 +1,59 @@
+package com.project.testcases;
+
+import com.project.pages.FurniturePage;
+import com.project.base.Common;
+
+import org.dom4j.DocumentException;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class FurniturePageTest extends Common
+{
+	FurniturePage FurnitureObj;
+	
+	@Test(priority=1)
+	public void FurnitureCatAccess()
+	{
+		WebElement furniture = FurnitureObj.furnitureCatAccess();
+		furniture.click();
+		log.info("Furniture category is accessible.");
+	}
+	
+	@Test(priority=2)
+	public void FurnitureFootwearAccess()
+	{
+		WebElement furnitureBed = FurnitureObj.furnitureBedAccess();	
+		furnitureBed.click();
+	}
+
+	@Test(priority=3)
+	public void checkProductRating()
+	{
+		WebElement productRating = FurnitureObj.checkProductRating();
+		log.info("Produt rating is displayed :" + productRating.isDisplayed());
+	}
+	
+	@Test(priority=4)
+	public void bedsCatMouseHover()
+	{
+		WebElement furnitureBedNew = FurnitureObj.bedsCatMouseHover();
+		log.info("Product rating is displayed :" + furnitureBedNew.isDisplayed();
+	}
+	
+  @BeforeClass
+  public void beforeClass() throws DocumentException 
+  {
+		  FurnitureObj = new FurniturePage();
+		  FurnitureObj.getsite();
+		  FurnitureObj.login();
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  
+	  FurnitureObj.closeBrowser();
+  }
+
+}

@@ -1,0 +1,57 @@
+package a.module.home;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+
+
+import static org.testng.Assert.assertEquals;
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
+
+
+
+public class NewTest {
+WebDriver driver;
+String url="http://www.cookbook.seleniumacademy.com/DoubleClickDemo.html";
+@Test
+public void f() {
+WebElement message=driver.findElement(By.id("message"));
+
+Actions action =new Actions(driver);
+System.out.println(message.getCssValue("color"));
+action.doubleClick(message).perform();
+assertEquals(message.getCssValue("color"),"rgba(0, 0, 0, 1)");
+
+
+action.perform();
+// System.out.println(droppable.getText());
+// assertEquals(droppable.getText(), "Dropped!");
+}
+@BeforeMethod
+public void beforeMethod() {
+System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+driver= new ChromeDriver();
+driver.manage().window().maximize();
+driver.get(url);
+}
+
+
+
+@AfterMethod
+public void afterMethod() throws InterruptedException {
+Thread.sleep(2000);
+driver.quit();
+}
+
+
+
+}

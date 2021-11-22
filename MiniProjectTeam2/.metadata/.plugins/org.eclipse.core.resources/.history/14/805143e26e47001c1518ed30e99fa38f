@@ -1,0 +1,46 @@
+package trackorder.tests;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import trackorder.pages.TrackOrderPage;
+
+public class TrackOrderTest {
+  
+  TrackOrderPage TrackingPage;
+  @Test(priority=2)
+public void enterEmail() 
+ {
+	  TrackingPage.enteringEmail("aishm222@yahoo.com");
+	  }
+  
+  @Test(priority=1)
+  public void enterId() 
+  {
+	  TrackingPage.enteringOrderId("7");
+  }
+  
+ @Test(priority=3)
+ public void pressTrack() {
+  TrackingPage.tracking();
+ 
+	 
+	  
+ }
+  
+  @BeforeClass
+  public void beforeClass() 
+  {
+	  TrackingPage = new TrackOrderPage();	  
+	  TrackingPage.getsite();
+	  TrackingPage.login("aishm222@yahoo.com","Testing@123");
+  }
+
+  
+  @AfterClass
+  public void afterClass() 
+  {
+	  TrackingPage.closeBrowser();
+  }
+//
+}

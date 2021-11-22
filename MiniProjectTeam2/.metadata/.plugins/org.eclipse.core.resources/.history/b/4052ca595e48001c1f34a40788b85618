@@ -1,0 +1,57 @@
+package com.project.testcases;
+
+import org.testng.annotations.Test;
+
+import com.project.base.Common;
+import com.project.pages.CartHomePage;
+
+import org.testng.annotations.BeforeClass;
+import org.dom4j.DocumentException;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+
+public class CartHomePageTest extends Common{
+  
+  CartHomePage CartHomeObj;
+ 
+  
+ @Test(priority=1)
+ public void myCartValue() {
+	 
+	    WebElement cartValue = CartHomeObj.myCartValue();
+		log.info(("The cart value is displayed : "+ cartValue.isDisplayed()));			
+		cartValue.click();
+	  
+ }
+ 
+ @Test(priority=2)
+ public void dropDownDisplayed() {
+	 
+	 WebElement dropDown = CartHomeObj.dropDownDisplayed();
+	 log.info("The Cart Drop Down List is displayed : "+ dropDown.isDisplayed());	
+	  
+ }
+ 
+ @Test(priority=3)
+ public void myCartColourChange() {
+	 
+	 CartHomeObj.myCartColourChange();
+	  
+ }
+  
+  @BeforeClass
+  public void beforeClass() throws DocumentException 
+  {
+	  CartHomeObj = new CartHomePage();	  
+	  CartHomeObj.getsite();
+	  CartHomeObj.login();
+  }
+  
+  @AfterClass
+  public void afterClass() 
+  {
+	  CartHomeObj.closeBrowser();
+	  log.info("Closing the Browser");
+  }
+//
+}

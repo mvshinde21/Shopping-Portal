@@ -1,0 +1,72 @@
+package com.project.pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.logging.Log;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import com.project.base.Common;
+
+public class BooksPage extends Common{
+	
+	@FindBy(id = "mc-horizontal-menu-collapse")
+	WebElement books;
+	
+	WebElement booksComic;
+	WebElement bookCart;
+
+	public BooksPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}
+	
+	public WebElement booksCatAccess()
+	{
+//		books = driver.findElement(By.id("mc-horizontal-menu-collapse"));
+		js.executeScript("arguments[0].setAttribute('style', 'background: black; border: 2px solid red;');", books);
+
+		return(books);
+	}
+	
+	
+	public WebElement booksComicsAccess()
+	{
+		booksComic = driver.findElement(By.xpath("//html/body/div[1]/div/div[1]/div[1]/div[1]/div/nav/ul/li/a"));
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", booksComic);
+		return(booksComic);
+
+	}
+	
+	
+	public WebElement addBookToCart()
+	{
+		
+		bookCart = driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div/div[1]/div/div/div[3]/div/ul/li[1]/a/button"));
+		js.executeScript("window.scrollBy(0,450)", "");
+		js.executeScript("arguments[0].setAttribute('style', 'background: black; border: 2px solid red;');", bookCart);
+		return(bookCart);
+		
+	}
+	
+	public String simpleAlert()
+	{		
+        Alert alert = driver.switchTo().alert();		    
+        String alertMessage= driver.switchTo().alert().getText();	
+        alert.accept();
+        return(alertMessage);
+
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+package homepages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
+import utilities.Common;
+
+public class SearchPage extends Common {
+
+	public WebElement SearchValidFunctionality()
+	{
+		WebElement searchBar = driver.findElement(By.xpath("//*[@class='search-field']"));
+		searchBar.sendKeys("The Wimpy Kid Do -It- Yourself Book");
+		searchBar.sendKeys(Keys.ENTER);
+	
+		WebElement product = driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div/div/div/div/div[2]/h3/a"));
+		return (product);
+	}
+	
+	public WebElement SearchPartialFunctionality()
+	{
+		WebElement searchBar = driver.findElement(By.xpath("//*[@class='search-field']"));
+		searchBar.sendKeys("iphone");
+		searchBar.sendKeys(Keys.ENTER);
+	
+		WebElement product = driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div/div/div/div/div[2]/h3/a"));
+		return (product);		
+	}
+	
+	public WebElement SearchInvalidFunctionality()
+	{
+		WebElement searchBar = driver.findElement(By.xpath("//*[@class='search-field']"));
+		searchBar.sendKeys("laptop");
+		searchBar.sendKeys(Keys.ENTER);
+		WebElement noProduct = driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div/div/h3"));
+		return (noProduct);
+	}
+
+}

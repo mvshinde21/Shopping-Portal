@@ -1,0 +1,57 @@
+package com.project.testcases;
+
+import org.testng.annotations.Test;
+
+import com.project.pages.ElectronicsPage;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class ElectronicsPageTest {
+	
+	ElectronicsPage ElectronicsObj;
+	 
+	  
+	 @Test(priority=1)
+	 public void elecCatAccess() {
+		 
+		 ElectronicsObj.elecCatAccess();
+		  
+	 }
+	 
+	 @Test(priority=2)
+	 public void elecMobilesAccess() {
+
+		 ElectronicsObj.elecMobilesAccess();
+	 
+	 }
+	 
+	 @Test(priority=3)
+	 public void prodImagePresent() {
+
+		 ElectronicsObj.prodImagePresent();
+	 
+	 }
+	 
+	 @Test(priority=4)
+	 public void addToWishlist() {
+
+		 ElectronicsObj.addToWishlist();
+	 
+	 }
+	  @BeforeClass
+	  public void beforeClass() 
+	  {
+		  ElectronicsObj = new ElectronicsPage();	  
+		  ElectronicsObj.getSite();
+		  ElectronicsObj.login("aishm222@yahoo.com","Testing@123");
+	  }
+
+	  
+	  @AfterClass
+	  public void afterClass() 
+	  {
+		  ElectronicsObj.closeBrowser();
+	  }
+	//
+	}

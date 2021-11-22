@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<credentials>
+<valid>
+<email>nirmal@yahoo.com</email>
+<password>1234</password>
+</valid>
+<invalidPassword>
+<email>nirmal@yahoo.com</email>
+<password>12345</password>
+</invalidPassword>
+
+<InvalidEmail>
+<email> nirmalyahoo.com</email>
+<password>1234</password>
+</InvalidEmail>
+
+<InvalidEmailandPassword>
+<email> nirmalyahoo.com</email>
+<password>12345</password>
+</InvalidEmailandPassword>
+
+</credentials>

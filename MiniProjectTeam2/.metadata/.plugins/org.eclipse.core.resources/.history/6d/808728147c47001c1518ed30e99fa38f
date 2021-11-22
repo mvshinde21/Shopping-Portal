@@ -1,0 +1,95 @@
+package pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ElectronicsPage {
+	
+	WebDriver driver;
+	JavascriptExecutor js;
+	
+	String baseurl = "http://localhost/shopping";	
+	
+	public void getSite() 
+	{
+//		 System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+		 WebDriverManager.chromedriver().setup();
+		 driver = new ChromeDriver();
+		 driver.get(baseurl);
+		 driver.manage().window().maximize();
+		 
+		 js = (JavascriptExecutor) driver;
+	}
+	
+	public void login(String emailid, String password)
+	{
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		WebElement loginpage = driver.findElement(By.xpath("/html/body/header/div[1]/div/div/div[1]/ul/li[4]/a"));
+		loginpage.click();
+		WebElement login= driver.findElement(By.name("login"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();",login); 
+		
+		driver.findElement(By.id("exampleInputEmail1")).sendKeys(emailid);
+		driver.findElement(By.id("exampleInputPassword1")).sendKeys(password);
+		login.click();
+	}
+	
+	public void elecCatAccess()
+	{
+
+		WebElement electronics = driver.findElement(By.xpath("//*[@id=\"mc-horizontal-menu-collapse\"]/div/ul/li[3]/a"));
+		js.executeScript("arguments[0].setAttribute('style', 'background: black; border: 2px solid red;');", electronics);
+//		Thread.sleep(1000);
+		electronics.click();			
+//		Thread.sleep(2000);	
+	}
+	
+	
+	public void booksComicsAccess()
+	{
+		WebElement booksComic = driver.findElement(By.xpath("//html/body/div[1]/div/div[1]/div[1]/div[1]/div/nav/ul/li/a"));
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", booksComic);
+//		Thread.sleep(1000);
+		booksComic.click();
+		System.out.println("Comics subcategory of Books is accessible.");
+//		Thread.sleep(3000);
+	}
+	
+	
+	public void addBookTocart()
+	{
+		WebElement bookCart = driver.findElement(By.xpath("//*[@id=\"grid-container\"]/div/div/div[1]/div/div/div[3]/div/ul/li[1]/a/button"));
+		js.executeScript("window.scrollBy(0,450)", "");
+//		Thread.sleep(2000);
+		js.executeScript("arguments[0].setAttribute('style', 'background: black; border: 2px solid red;');", bookCart);
+//		Thread.sleep(1000);
+		bookCart.click();
+//		Thread.sleep(2000);
+		
+	}
+	
+	public void simpleAlert()
+	{		
+        Alert alert = driver.switchTo().alert();		    
+        String alertMessage= driver.switchTo().alert().getText();		
+        System.out.println(alertMessage);	
+//      Thread.sleep(3000);
+        alert.accept();
+
+	}
+	
+	public void closeBrowser()
+	{
+		driver.quit();
+	}
+
+}

@@ -1,0 +1,100 @@
+package com.project.testcases;
+
+import static org.testng.Assert.assertEquals;
+import org.apache.log4j.Logger;
+import org.dom4j.DocumentException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import com.project.base.Common;
+import com.project.pages.MyCartPage;
+
+public class MyCartPageTest extends Common{
+	
+	MyCartPage MyCartObj;
+	String expectedText = "Shopping Cart";
+	String expectedTitle = "My Cart";
+	
+	public static Logger log = Logger.getLogger(MyCartPage.class.getName());
+	
+ @Test(priority = 1)
+  public void AddToCart() {
+		  
+    MyCartObj.AddToCart();
+ }
+ 
+  @Test(priority = 2)
+  public void quantityUpdate() {	  
+	  
+	  WebElement incount = MyCartObj.increasequantity();	  
+	  if(incount.getAttribute("value").equals("2"));
+		 {
+			 log.info("Quantity is increased");
+		 }
+		 
+//	 WebElement decount = MyCartObj.decreasequantity();	 
+//	 if((decount.getAttribute("value")).equals("1"));
+//	 {
+//		 log.info("Quantity is decreased");
+//	 }	
+  }
+  
+  @Test(priority = 3)
+  public void textTitleButtonVerification(){
+	  
+		String actualTitle = MyCartObj.titlecheck();
+	    assertEquals(expectedTitle,actualTitle);
+//		if (actualTitle.equals(expectedTitle)
+			log.info("Button Verified");
+
+	       // log.info(MyCartObj.actualTitl);
+	    
+		String actualText = MyCartObj.textcheck();
+//		assertEquals(expectedText, actualText);
+		MyCartObj.button.click();
+			if (actualText.equals(expectedText))
+				log.info("Button Verified");
+	
+	  	  
+		}
+  
+  @Test(priority = 4)
+  public void descriptionCheck() {
+	  	  
+	  driver.findElement(By.xpath("/html/body/header/div[1]/div/div/div[1]/ul/li[3]/a")).click();
+	  driver.findElement(By.xpath("//h4/a[@href=\"product-details.php?pid=15\" ]")).click();
+	  if(MyCartObj.proddescription().isDisplayed()){
+  }   			log.info("Passed");
+  }   
+  @Test(priority = 5)
+  public void reviewCheck() {
+	  
+  MyCartObj.prodreview().click();
+  driver.findElement(By.xpath("//input[@name=\"quality\" and @value=\"3\"]")).click();
+  		driver.findElement(By.xpath("//input[@name=\"price\" and @value=\"3\"]")).click();
+  		driver.findElement(By.xpath("//input[@name=\"value\" and @value=\"3\"]")).click();
+  		driver.findElement(By.xpath("//input[@name=\"name\"]")).sendKeys("Neha");
+  		driver.findElement(By.id("exampleInputSummary")).sendKeys("Book");
+  		driver.findElement(By.id("exampleInputReview")).sendKeys("exampleInputReview");
+  		driver.findElement(By.xpath("//button[@name=\"submit\"]")).click();
+  		//Thread.sleep(2000);
+  		log.info("successful");
+  }
+  @BeforeClass
+  public void beforeClass() throws DocumentException, InterruptedException {
+	  
+	  MyCartObj =new MyCartPage(); 	  
+	  MyCartObj.getsite();
+	  MyCartObj.login();
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  
+	  MyCartObj.closeBrowser();
+	  log.info("Closing the Browser");
+  }
+
+}

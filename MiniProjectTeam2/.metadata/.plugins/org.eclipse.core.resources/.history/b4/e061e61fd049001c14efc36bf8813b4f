@@ -1,0 +1,51 @@
+package com.project.testcases;
+
+
+import org.testng.annotations.Test;
+
+import com.project.base.Common;
+import com.project.pages.WishlistPages;
+
+import org.testng.annotations.BeforeClass;
+import org.dom4j.DocumentException;
+import org.testng.annotations.AfterClass;
+
+public class WishlistTest extends Common {
+	WishlistPages myWishlist;
+	
+  @Test(priority=1)
+  public void wishlist_button() throws InterruptedException, DocumentException {
+	  myWishlist.wishlist_button();
+	  
+  }
+  @Test(priority=2)
+  public void removeProduct() throws InterruptedException, DocumentException {
+	  myWishlist.removeProduct();
+	  
+  }
+  @Test(priority=3)
+  public void addToCart() throws InterruptedException, DocumentException {
+	  myWishlist.addToCart();
+	  
+  }
+  @Test(priority=4)
+  public void clickOnProduct() throws InterruptedException, DocumentException {
+	  
+	  myWishlist.clickOnProduct();
+	  
+  }
+  @BeforeClass
+  public void beforeClass() {
+	  
+	  myWishlist= new WishlistPages();
+	  
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  
+	  myWishlist.closeBrowser();
+  }
+  
+
+}
