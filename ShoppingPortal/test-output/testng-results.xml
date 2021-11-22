@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="50" passed="50" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-22T12:10:18 IST" name="Mini Project Suite" finished-at="2021-11-22T12:12:11 IST" duration-ms="112336">
+    <groups>
+    </groups>
+    <test started-at="2021-11-22T12:10:18 IST" name="Test" finished-at="2021-11-22T12:12:11 IST" duration-ms="112336">
+      <class name="com.project.testcases.HomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:10:57 IST" name="setUp" finished-at="2021-11-22T12:11:02 IST" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="pageTitle()[pri:1, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:02 IST" name="pageTitle" description="To verify Page Title" finished-at="2021-11-22T12:11:02 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTitle -->
+        <test-method signature="brandTitleCheck()[pri:2, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:02 IST" name="brandTitleCheck" description="To verify Brand Title" finished-at="2021-11-22T12:11:02 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandTitleCheck -->
+        <test-method signature="smartPhoneScroll()[pri:3, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:02 IST" name="smartPhoneScroll" description="Smartphone display left Scroll" finished-at="2021-11-22T12:11:03 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smartPhoneScroll -->
+        <test-method signature="laptopScroll()[pri:4, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:03 IST" name="laptopScroll" description="Laptop display right Scroll" finished-at="2021-11-22T12:11:03 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- laptopScroll -->
+        <test-method signature="facebookDirect()[pri:5, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:03 IST" name="facebookDirect" description="Facebook social media visibility on Home" finished-at="2021-11-22T12:11:08 IST" duration-ms="4997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookDirect -->
+        <test-method signature="linkedinDirect()[pri:6, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:08 IST" name="linkedinDirect" description="LinkedIn social media visibility on Home" finished-at="2021-11-22T12:11:08 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkedinDirect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.HomeTest@59505b48]" started-at="2021-11-22T12:11:08 IST" name="tearDown" finished-at="2021-11-22T12:11:09 IST" duration-ms="1187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.HomeTest -->
+      <class name="com.project.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:09 IST" name="setUp" finished-at="2021-11-22T12:11:14 IST" duration-ms="4580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidCredentials()[pri:1, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:14 IST" name="loginWithValidCredentials" description="login with valid credentials" finished-at="2021-11-22T12:11:15 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="loginWithInvalidUserid()[pri:2, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:15 IST" name="loginWithInvalidUserid" description="login with invalid userid" finished-at="2021-11-22T12:11:16 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUserid -->
+        <test-method signature="loginWithInvalidPassword()[pri:3, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:16 IST" name="loginWithInvalidPassword" description="login with invalid password" finished-at="2021-11-22T12:11:16 IST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method signature="loginWithInvalidUseridOrPassword()[pri:4, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:16 IST" name="loginWithInvalidUseridOrPassword" description="login with invalid password and Userid" finished-at="2021-11-22T12:11:17 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUseridOrPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.LoginTest@4efac082]" started-at="2021-11-22T12:11:17 IST" name="tearDown" finished-at="2021-11-22T12:11:18 IST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.LoginTest -->
+      <class name="com.project.testcases.RegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.RegistrationTest@b9b00e0]" started-at="2021-11-22T12:11:41 IST" name="setUp" finished-at="2021-11-22T12:11:46 IST" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registration()[pri:1, instance:com.project.testcases.RegistrationTest@b9b00e0]" started-at="2021-11-22T12:11:46 IST" name="registration" description="New Registration" finished-at="2021-11-22T12:11:46 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method signature="reRegistration()[pri:2, instance:com.project.testcases.RegistrationTest@b9b00e0]" started-at="2021-11-22T12:11:46 IST" name="reRegistration" description="Registration of already register user" finished-at="2021-11-22T12:11:47 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.RegistrationTest@b9b00e0]" started-at="2021-11-22T12:11:47 IST" name="tearDown" finished-at="2021-11-22T12:11:47 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.RegistrationTest -->
+      <class name="com.project.testcases.ElectronicsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:36 IST" name="setUp" finished-at="2021-11-22T12:10:41 IST" duration-ms="5231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="elecCatAccess()[pri:1, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:41 IST" name="elecCatAccess" description="To access the Electronics Category" finished-at="2021-11-22T12:10:41 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elecCatAccess -->
+        <test-method signature="elecMobilesAccess()[pri:2, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:41 IST" name="elecMobilesAccess" description="To access the Mobiles Sub-Category" finished-at="2021-11-22T12:10:41 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elecMobilesAccess -->
+        <test-method signature="prodImagePresent()[pri:3, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:41 IST" name="prodImagePresent" description="Product Image is Visible" finished-at="2021-11-22T12:10:41 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prodImagePresent -->
+        <test-method signature="addToWishlist()[pri:4, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:41 IST" name="addToWishlist" description="To add Mobile to Wishlist" finished-at="2021-11-22T12:10:42 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToWishlist -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.ElectronicsTest@d9345cd]" started-at="2021-11-22T12:10:42 IST" name="tearDown" finished-at="2021-11-22T12:10:43 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.ElectronicsTest -->
+      <class name="com.project.testcases.BooksTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:18 IST" name="setUp" finished-at="2021-11-22T12:10:24 IST" duration-ms="5757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="booksCatAccess()[pri:1, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:24 IST" name="booksCatAccess" description="To access the Books Category" finished-at="2021-11-22T12:10:25 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- booksCatAccess -->
+        <test-method signature="booksComicsAccess()[pri:2, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:25 IST" name="booksComicsAccess" description="To access the Comic Books Sub-category" finished-at="2021-11-22T12:10:25 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- booksComicsAccess -->
+        <test-method signature="addBookToCart()[pri:3, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:25 IST" name="addBookToCart" description="To add the Book to the Cart" finished-at="2021-11-22T12:10:26 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookToCart -->
+        <test-method signature="simpleAlert()[pri:4, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:26 IST" name="simpleAlert" description="To display and accept Simple Alert" finished-at="2021-11-22T12:10:26 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.BooksTest@26e356f0]" started-at="2021-11-22T12:10:26 IST" name="tearDown" finished-at="2021-11-22T12:10:27 IST" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.BooksTest -->
+      <class name="com.project.testcases.WishlistTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:04 IST" name="setUp" finished-at="2021-11-22T12:12:09 IST" duration-ms="5085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="wishlist_button()[pri:1, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:09 IST" name="wishlist_button" description="Click on wishlist button. " finished-at="2021-11-22T12:12:09 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wishlist_button -->
+        <test-method signature="clickOnProduct()[pri:2, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:09 IST" name="clickOnProduct" description="Click on product for more details. " finished-at="2021-11-22T12:12:09 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnProduct -->
+        <test-method signature="removeProduct()[pri:3, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:09 IST" name="removeProduct" description="Remove product from wishlist. " finished-at="2021-11-22T12:12:09 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProduct -->
+        <test-method signature="addToCart()[pri:4, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:09 IST" name="addToCart" description="Add product to cart. " finished-at="2021-11-22T12:12:10 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.WishlistTest@72e5a8e]" started-at="2021-11-22T12:12:10 IST" name="tearDown" finished-at="2021-11-22T12:12:11 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.WishlistTest -->
+      <class name="com.project.testcases.MyCartItemRemovalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.MyCartItemRemovalTest@48aca48b]" started-at="2021-11-22T12:11:26 IST" name="setUp" finished-at="2021-11-22T12:11:30 IST" duration-ms="4959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removingItem()[pri:0, instance:com.project.testcases.MyCartItemRemovalTest@48aca48b]" started-at="2021-11-22T12:11:30 IST" name="removingItem" description="For item removal from cart." finished-at="2021-11-22T12:11:31 IST" duration-ms="884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.MyCartItemRemovalTest@48aca48b]" started-at="2021-11-22T12:11:31 IST" name="tearDown" finished-at="2021-11-22T12:11:33 IST" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.MyCartItemRemovalTest -->
+      <class name="com.project.testcases.MyCartAddressTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.MyCartAddressTest@6bd61f98]" started-at="2021-11-22T12:11:18 IST" name="setUp" finished-at="2021-11-22T12:11:23 IST" duration-ms="5341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="billingAddUpdation()[pri:1, instance:com.project.testcases.MyCartAddressTest@6bd61f98]" started-at="2021-11-22T12:11:23 IST" name="billingAddUpdation" description="For checking updation of billing address." finished-at="2021-11-22T12:11:24 IST" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billingAddUpdation -->
+        <test-method signature="shippingAddUpdation()[pri:2, instance:com.project.testcases.MyCartAddressTest@6bd61f98]" started-at="2021-11-22T12:11:24 IST" name="shippingAddUpdation" description="For checking updation of shipping address." finished-at="2021-11-22T12:11:24 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingAddUpdation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.MyCartAddressTest@6bd61f98]" started-at="2021-11-22T12:11:24 IST" name="tearDown" finished-at="2021-11-22T12:11:26 IST" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.MyCartAddressTest -->
+      <class name="com.project.testcases.TrackOrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.TrackOrderTest@7d4f9aae]" started-at="2021-11-22T12:11:55 IST" name="setUp" finished-at="2021-11-22T12:12:00 IST" duration-ms="5195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidEmail()[pri:1, instance:com.project.testcases.TrackOrderTest@7d4f9aae]" started-at="2021-11-22T12:12:00 IST" name="invalidEmail" description="For checking that on giving invalid email id error message." finished-at="2021-11-22T12:12:01 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmail -->
+        <test-method signature="loggedoutUser()[pri:2, instance:com.project.testcases.TrackOrderTest@7d4f9aae]" started-at="2021-11-22T12:12:01 IST" name="loggedoutUser" description="For checking that logged user is able to track order status or not." finished-at="2021-11-22T12:12:02 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggedoutUser -->
+        <test-method signature="trackingOrder()[pri:3, instance:com.project.testcases.TrackOrderTest@7d4f9aae]" started-at="2021-11-22T12:12:02 IST" name="trackingOrder" description="For tracking the order status." finished-at="2021-11-22T12:12:03 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trackingOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.TrackOrderTest@7d4f9aae]" started-at="2021-11-22T12:12:03 IST" name="tearDown" finished-at="2021-11-22T12:12:04 IST" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.TrackOrderTest -->
+      <class name="com.project.testcases.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.SearchTest@506ae4d4]" started-at="2021-11-22T12:11:47 IST" name="setUp" finished-at="2021-11-22T12:11:52 IST" duration-ms="4953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchValidTest()[pri:1, instance:com.project.testcases.SearchTest@506ae4d4]" started-at="2021-11-22T12:11:52 IST" name="SearchValidTest" description="To verify Product is visible with valid Search Data" finished-at="2021-11-22T12:11:53 IST" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValidTest -->
+        <test-method signature="SearchPartialTest()[pri:2, instance:com.project.testcases.SearchTest@506ae4d4]" started-at="2021-11-22T12:11:53 IST" name="SearchPartialTest" description="To verify Product is visible with partially valid Search Data" finished-at="2021-11-22T12:11:54 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchPartialTest -->
+        <test-method signature="SearchInvalidTest()[pri:3, instance:com.project.testcases.SearchTest@506ae4d4]" started-at="2021-11-22T12:11:54 IST" name="SearchInvalidTest" description="To verify No Product Found is displayed with invalid Search Data" finished-at="2021-11-22T12:11:54 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchInvalidTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.SearchTest@506ae4d4]" started-at="2021-11-22T12:11:54 IST" name="tearDown" finished-at="2021-11-22T12:11:55 IST" duration-ms="1168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.SearchTest -->
+      <class name="com.project.testcases.FurnitureTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:49 IST" name="setUp" finished-at="2021-11-22T12:10:54 IST" duration-ms="4785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="furnitureCatAccess()[pri:1, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:54 IST" name="furnitureCatAccess" description="To access the Furniture Category" finished-at="2021-11-22T12:10:54 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- furnitureCatAccess -->
+        <test-method signature="furnitureBedAccess()[pri:2, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:54 IST" name="furnitureBedAccess" description="To access the Beds Furniture&#039;s Sub-category" finished-at="2021-11-22T12:10:55 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- furnitureBedAccess -->
+        <test-method signature="checkProductRating()[pri:3, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:55 IST" name="checkProductRating" description="To check Product Rating of any Product is visible" finished-at="2021-11-22T12:10:55 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkProductRating -->
+        <test-method signature="bedsCatMouseHover()[pri:4, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:55 IST" name="bedsCatMouseHover" description="To check Color change on MOuse Hover is visible" finished-at="2021-11-22T12:10:55 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bedsCatMouseHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.FurnitureTest@29215f06]" started-at="2021-11-22T12:10:55 IST" name="tearDown" finished-at="2021-11-22T12:10:57 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.FurnitureTest -->
+      <class name="com.project.testcases.FashionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:43 IST" name="setUp" finished-at="2021-11-22T12:10:48 IST" duration-ms="5172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fashionCatAccess()[pri:1, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:48 IST" name="fashionCatAccess" description="To access the Fashion Category" finished-at="2021-11-22T12:10:48 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fashionCatAccess -->
+        <test-method signature="fashionFootwearAccess()[pri:2, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:48 IST" name="fashionFootwearAccess" description="To access the Footwear Fashion&#039;s Sub-category" finished-at="2021-11-22T12:10:48 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fashionFootwearAccess -->
+        <test-method signature="checkProductRating()[pri:3, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:48 IST" name="checkProductRating" description="To check Product Rating of any Product is visible" finished-at="2021-11-22T12:10:48 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkProductRating -->
+        <test-method signature="checkMrp()[pri:4, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:48 IST" name="checkMrp" description="To check MRP of any Product is visible" finished-at="2021-11-22T12:10:48 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMrp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.FashionTest@2d710f1a]" started-at="2021-11-22T12:10:48 IST" name="tearDown" finished-at="2021-11-22T12:10:49 IST" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.FashionTest -->
+      <class name="com.project.testcases.MyCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:33 IST" name="setUp" finished-at="2021-11-22T12:11:38 IST" duration-ms="4926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddToCart()[pri:1, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:38 IST" name="AddToCart" description="Add product to cart" finished-at="2021-11-22T12:11:38 IST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method signature="quantityUpdate()[pri:2, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:38 IST" name="quantityUpdate" description="Quantity update checking" finished-at="2021-11-22T12:11:38 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quantityUpdate -->
+        <test-method signature="textTitleButtonVerification()[pri:3, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:38 IST" name="textTitleButtonVerification" description="Basic Fuctionality ckeck" finished-at="2021-11-22T12:11:39 IST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textTitleButtonVerification -->
+        <test-method signature="descriptionCheck()[pri:4, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:39 IST" name="descriptionCheck" description="For checking description of product" finished-at="2021-11-22T12:11:39 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- descriptionCheck -->
+        <test-method signature="reviewCheck()[pri:5, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:39 IST" name="reviewCheck" description="To send and check the review of product" finished-at="2021-11-22T12:11:40 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reviewCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.MyCartTest@13fd2ccd]" started-at="2021-11-22T12:11:40 IST" name="tearDown" finished-at="2021-11-22T12:11:41 IST" duration-ms="976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.MyCartTest -->
+      <class name="com.project.testcases.CartHomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:27 IST" name="setUp" finished-at="2021-11-22T12:10:32 IST" duration-ms="5121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCart()[pri:1, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:32 IST" name="addToCart" description="Add a Book to Cart" finished-at="2021-11-22T12:10:32 IST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="myCartValue()[pri:2, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:32 IST" name="myCartValue" description="Cart total value display on Home Page" finished-at="2021-11-22T12:10:33 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCartValue -->
+        <test-method signature="dropDownDisplayed()[pri:3, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:33 IST" name="dropDownDisplayed" description="Drop Down List of Products in the Cart on Home Page" finished-at="2021-11-22T12:10:33 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownDisplayed -->
+        <test-method signature="myCartColourChange()[pri:4, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:33 IST" name="myCartColourChange" description="My Cart colour change on Mouse Hovering" finished-at="2021-11-22T12:10:34 IST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCartColourChange -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.testcases.CartHomeTest@428640fa]" started-at="2021-11-22T12:10:34 IST" name="tearDown" finished-at="2021-11-22T12:10:36 IST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testcases.CartHomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Mini Project Suite -->
+</testng-results>

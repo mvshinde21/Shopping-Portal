@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>50/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 22 12:10:18 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>112 seconds (112336 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.project.testcases.WishlistTest.wishlist_button()'><b>wishlist_button</b><br>Test class: com.project.testcases.WishlistTest<br>Test method: Click on wishlist button. </td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.WishlistTest@72e5a8e</td></tr>
+<tr>
+<td title='com.project.testcases.LoginTest.loginWithInvalidUserid()'><b>loginWithInvalidUserid</b><br>Test class: com.project.testcases.LoginTest<br>Test method: login with invalid userid</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.LoginTest@4efac082</td></tr>
+<tr>
+<td title='com.project.testcases.WishlistTest.addToCart()'><b>addToCart</b><br>Test class: com.project.testcases.WishlistTest<br>Test method: Add product to cart. </td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.WishlistTest@72e5a8e</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.pageTitle()'><b>pageTitle</b><br>Test class: com.project.testcases.HomeTest<br>Test method: To verify Page Title</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartTest.descriptionCheck()'><b>descriptionCheck</b><br>Test class: com.project.testcases.MyCartTest<br>Test method: For checking description of product</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartTest@13fd2ccd</td></tr>
+<tr>
+<td title='com.project.testcases.SearchTest.SearchPartialTest()'><b>SearchPartialTest</b><br>Test class: com.project.testcases.SearchTest<br>Test method: To verify Product is visible with partially valid Search Data</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.SearchTest@506ae4d4</td></tr>
+<tr>
+<td title='com.project.testcases.CartHomeTest.myCartValue()'><b>myCartValue</b><br>Test class: com.project.testcases.CartHomeTest<br>Test method: Cart total value display on Home Page</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.CartHomeTest@428640fa</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartTest.AddToCart()'><b>AddToCart</b><br>Test class: com.project.testcases.MyCartTest<br>Test method: Add product to cart</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartTest@13fd2ccd</td></tr>
+<tr>
+<td title='com.project.testcases.ElectronicsTest.elecCatAccess()'><b>elecCatAccess</b><br>Test class: com.project.testcases.ElectronicsTest<br>Test method: To access the Electronics Category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.ElectronicsTest@d9345cd</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartTest.reviewCheck()'><b>reviewCheck</b><br>Test class: com.project.testcases.MyCartTest<br>Test method: To send and check the review of product</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartTest@13fd2ccd</td></tr>
+<tr>
+<td title='com.project.testcases.TrackOrderTest.trackingOrder()'><b>trackingOrder</b><br>Test class: com.project.testcases.TrackOrderTest<br>Test method: For tracking the order status.</td>
+<td></td>
+<td>1</td>
+<td>com.project.testcases.TrackOrderTest@7d4f9aae</td></tr>
+<tr>
+<td title='com.project.testcases.BooksTest.addBookToCart()'><b>addBookToCart</b><br>Test class: com.project.testcases.BooksTest<br>Test method: To add the Book to the Cart</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.BooksTest@26e356f0</td></tr>
+<tr>
+<td title='com.project.testcases.BooksTest.booksComicsAccess()'><b>booksComicsAccess</b><br>Test class: com.project.testcases.BooksTest<br>Test method: To access the Comic Books Sub-category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.BooksTest@26e356f0</td></tr>
+<tr>
+<td title='com.project.testcases.CartHomeTest.dropDownDisplayed()'><b>dropDownDisplayed</b><br>Test class: com.project.testcases.CartHomeTest<br>Test method: Drop Down List of Products in the Cart on Home Page</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.CartHomeTest@428640fa</td></tr>
+<tr>
+<td title='com.project.testcases.BooksTest.simpleAlert()'><b>simpleAlert</b><br>Test class: com.project.testcases.BooksTest<br>Test method: To display and accept Simple Alert</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.BooksTest@26e356f0</td></tr>
+<tr>
+<td title='com.project.testcases.CartHomeTest.addToCart()'><b>addToCart</b><br>Test class: com.project.testcases.CartHomeTest<br>Test method: Add a Book to Cart</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.CartHomeTest@428640fa</td></tr>
+<tr>
+<td title='com.project.testcases.FashionTest.fashionFootwearAccess()'><b>fashionFootwearAccess</b><br>Test class: com.project.testcases.FashionTest<br>Test method: To access the Footwear Fashion's Sub-category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FashionTest@2d710f1a</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartTest.quantityUpdate()'><b>quantityUpdate</b><br>Test class: com.project.testcases.MyCartTest<br>Test method: Quantity update checking</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartTest@13fd2ccd</td></tr>
+<tr>
+<td title='com.project.testcases.TrackOrderTest.loggedoutUser()'><b>loggedoutUser</b><br>Test class: com.project.testcases.TrackOrderTest<br>Test method: For checking that logged user is able to track order status or not.</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.TrackOrderTest@7d4f9aae</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.brandTitleCheck()'><b>brandTitleCheck</b><br>Test class: com.project.testcases.HomeTest<br>Test method: To verify Brand Title</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartTest.textTitleButtonVerification()'><b>textTitleButtonVerification</b><br>Test class: com.project.testcases.MyCartTest<br>Test method: Basic Fuctionality ckeck</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartTest@13fd2ccd</td></tr>
+<tr>
+<td title='com.project.testcases.LoginTest.loginWithInvalidPassword()'><b>loginWithInvalidPassword</b><br>Test class: com.project.testcases.LoginTest<br>Test method: login with invalid password</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.LoginTest@4efac082</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.linkedinDirect()'><b>linkedinDirect</b><br>Test class: com.project.testcases.HomeTest<br>Test method: LinkedIn social media visibility on Home</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.smartPhoneScroll()'><b>smartPhoneScroll</b><br>Test class: com.project.testcases.HomeTest<br>Test method: Smartphone display left Scroll</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.LoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.project.testcases.LoginTest<br>Test method: login with valid credentials</td>
+<td></td>
+<td>1</td>
+<td>com.project.testcases.LoginTest@4efac082</td></tr>
+<tr>
+<td title='com.project.testcases.ElectronicsTest.addToWishlist()'><b>addToWishlist</b><br>Test class: com.project.testcases.ElectronicsTest<br>Test method: To add Mobile to Wishlist</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.ElectronicsTest@d9345cd</td></tr>
+<tr>
+<td title='com.project.testcases.WishlistTest.clickOnProduct()'><b>clickOnProduct</b><br>Test class: com.project.testcases.WishlistTest<br>Test method: Click on product for more details. </td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.WishlistTest@72e5a8e</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.facebookDirect()'><b>facebookDirect</b><br>Test class: com.project.testcases.HomeTest<br>Test method: Facebook social media visibility on Home</td>
+<td></td>
+<td>4</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.FurnitureTest.furnitureCatAccess()'><b>furnitureCatAccess</b><br>Test class: com.project.testcases.FurnitureTest<br>Test method: To access the Furniture Category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FurnitureTest@29215f06</td></tr>
+<tr>
+<td title='com.project.testcases.FashionTest.fashionCatAccess()'><b>fashionCatAccess</b><br>Test class: com.project.testcases.FashionTest<br>Test method: To access the Fashion Category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FashionTest@2d710f1a</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartItemRemovalTest.removingItem()'><b>removingItem</b><br>Test class: com.project.testcases.MyCartItemRemovalTest<br>Test method: For item removal from cart.</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartItemRemovalTest@48aca48b</td></tr>
+<tr>
+<td title='com.project.testcases.WishlistTest.removeProduct()'><b>removeProduct</b><br>Test class: com.project.testcases.WishlistTest<br>Test method: Remove product from wishlist. </td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.WishlistTest@72e5a8e</td></tr>
+<tr>
+<td title='com.project.testcases.FashionTest.checkProductRating()'><b>checkProductRating</b><br>Test class: com.project.testcases.FashionTest<br>Test method: To check Product Rating of any Product is visible</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FashionTest@2d710f1a</td></tr>
+<tr>
+<td title='com.project.testcases.SearchTest.SearchValidTest()'><b>SearchValidTest</b><br>Test class: com.project.testcases.SearchTest<br>Test method: To verify Product is visible with valid Search Data</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.SearchTest@506ae4d4</td></tr>
+<tr>
+<td title='com.project.testcases.RegistrationTest.registration()'><b>registration</b><br>Test class: com.project.testcases.RegistrationTest<br>Test method: New Registration</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.RegistrationTest@b9b00e0</td></tr>
+<tr>
+<td title='com.project.testcases.LoginTest.loginWithInvalidUseridOrPassword()'><b>loginWithInvalidUseridOrPassword</b><br>Test class: com.project.testcases.LoginTest<br>Test method: login with invalid password and Userid</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.LoginTest@4efac082</td></tr>
+<tr>
+<td title='com.project.testcases.ElectronicsTest.elecMobilesAccess()'><b>elecMobilesAccess</b><br>Test class: com.project.testcases.ElectronicsTest<br>Test method: To access the Mobiles Sub-Category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.ElectronicsTest@d9345cd</td></tr>
+<tr>
+<td title='com.project.testcases.TrackOrderTest.invalidEmail()'><b>invalidEmail</b><br>Test class: com.project.testcases.TrackOrderTest<br>Test method: For checking that on giving invalid email id error message.</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.TrackOrderTest@7d4f9aae</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartAddressTest.shippingAddUpdation()'><b>shippingAddUpdation</b><br>Test class: com.project.testcases.MyCartAddressTest<br>Test method: For checking updation of shipping address.</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.MyCartAddressTest@6bd61f98</td></tr>
+<tr>
+<td title='com.project.testcases.HomeTest.laptopScroll()'><b>laptopScroll</b><br>Test class: com.project.testcases.HomeTest<br>Test method: Laptop display right Scroll</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.HomeTest@59505b48</td></tr>
+<tr>
+<td title='com.project.testcases.FurnitureTest.furnitureBedAccess()'><b>furnitureBedAccess</b><br>Test class: com.project.testcases.FurnitureTest<br>Test method: To access the Beds Furniture's Sub-category</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FurnitureTest@29215f06</td></tr>
+<tr>
+<td title='com.project.testcases.RegistrationTest.reRegistration()'><b>reRegistration</b><br>Test class: com.project.testcases.RegistrationTest<br>Test method: Registration of already register user</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.RegistrationTest@b9b00e0</td></tr>
+<tr>
+<td title='com.project.testcases.ElectronicsTest.prodImagePresent()'><b>prodImagePresent</b><br>Test class: com.project.testcases.ElectronicsTest<br>Test method: Product Image is Visible</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.ElectronicsTest@d9345cd</td></tr>
+<tr>
+<td title='com.project.testcases.CartHomeTest.myCartColourChange()'><b>myCartColourChange</b><br>Test class: com.project.testcases.CartHomeTest<br>Test method: My Cart colour change on Mouse Hovering</td>
+<td></td>
+<td>1</td>
+<td>com.project.testcases.CartHomeTest@428640fa</td></tr>
+<tr>
+<td title='com.project.testcases.FashionTest.checkMrp()'><b>checkMrp</b><br>Test class: com.project.testcases.FashionTest<br>Test method: To check MRP of any Product is visible</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FashionTest@2d710f1a</td></tr>
+<tr>
+<td title='com.project.testcases.SearchTest.SearchInvalidTest()'><b>SearchInvalidTest</b><br>Test class: com.project.testcases.SearchTest<br>Test method: To verify No Product Found is displayed with invalid Search Data</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.SearchTest@506ae4d4</td></tr>
+<tr>
+<td title='com.project.testcases.BooksTest.booksCatAccess()'><b>booksCatAccess</b><br>Test class: com.project.testcases.BooksTest<br>Test method: To access the Books Category</td>
+<td></td>
+<td>1</td>
+<td>com.project.testcases.BooksTest@26e356f0</td></tr>
+<tr>
+<td title='com.project.testcases.FurnitureTest.checkProductRating()'><b>checkProductRating</b><br>Test class: com.project.testcases.FurnitureTest<br>Test method: To check Product Rating of any Product is visible</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FurnitureTest@29215f06</td></tr>
+<tr>
+<td title='com.project.testcases.FurnitureTest.bedsCatMouseHover()'><b>bedsCatMouseHover</b><br>Test class: com.project.testcases.FurnitureTest<br>Test method: To check Color change on MOuse Hover is visible</td>
+<td></td>
+<td>0</td>
+<td>com.project.testcases.FurnitureTest@29215f06</td></tr>
+<tr>
+<td title='com.project.testcases.MyCartAddressTest.billingAddUpdation()'><b>billingAddUpdation</b><br>Test class: com.project.testcases.MyCartAddressTest<br>Test method: For checking updation of billing address.</td>
+<td></td>
+<td>1</td>
+<td>com.project.testcases.MyCartAddressTest@6bd61f98</td></tr>
+</table><p>
+</body>
+</html>
