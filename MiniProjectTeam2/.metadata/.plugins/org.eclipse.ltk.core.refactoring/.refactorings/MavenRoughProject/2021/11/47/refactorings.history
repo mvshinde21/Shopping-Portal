@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;MyCartHome.java&apos; to &apos;ShoppingPortal/src/main/java/com.project.pages&apos;&#x0D;&#x0A;- Original project: &apos;MavenRoughProject&apos;&#x0D;&#x0A;- Destination element: &apos;ShoppingPortal/src/main/java/com.project.pages&apos;&#x0D;&#x0A;- Original element: &apos;com.psl.MyCartHome.java&apos;" description="Copy compilation unit" destination="=ShoppingPortal/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.project.pages" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.psl{MyCartHome.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1637213236125" units="1" version="1.0"/>
-</session>
