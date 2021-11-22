@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<credentials>
+<valid>
+<email>nirmal@yahoo.com</email>
+<password>1234</password>
+</valid>
+<invalidPassword>
+<email>nirmal@yahoo.com</email>
+<password>12345</password>
+</invalidPassword>
+
+<InvalidEmail>
+<email> nirmalyahoo.com</email>
+<password>1234</password>
+</InvalidEmail>
+
+<InvalidEmailandPassword>
+<email> nirmalyahoo.com</email>
+<password>12345</password>
+</InvalidEmailandPassword>
+
+<emptydeetsShipBill>
+<email>aishm222@yahoo.com</email> //keep this account's address details empty.
+<password>Testing@123</password>
+</emptydeetsShipBill>
+
+<newRegistration>
+ <email> nirmal9000@yahoo.com</email>
+ <password>1234</password>
+ <name> nirmal</name>
+ <contact>12345</contact>
+ <confirmPassword>1234</confirmPassword>
+</newRegistration>
+
+<reRegistration>
+ <email> aishm222@yahoo.com</email>
+ <password>12345</password>
+ <name> Aishwarya</name>
+ <contact>12345</contact>
+ <confirmPassword>12345</confirmPassword>
+</reRegistration>
+
+
+ <data>
+ 	 <searchdata>
+ 	 	<validdata>The Wimpy Kid Do -It- Yourself Book</validdata>
+ 	 	<invaliddata>laptop</invaliddata>
+ 	 	<pardata>iph</pardata>
+ 	 </searchdata>
+ </data>
+ 
+<ProdReview>
+<name> Neha </name>
+<summary> Book </summary>
+<review> Good </review>
+</ProdReview>
+ 
+ <address>
+<shipAdd>Saket Colony</shipAdd>
+<shipState>MP</shipState>
+<shipCity>Indore</shipCity>
+<shipPincode>00000</shipPincode>
+<billAdd>South Delhi</billAdd>
+<billState>MP</billState>
+<billCity>Indore</billCity>
+<billPincode>00000</billPincode>
+</address>
+
+<trackOrder>
+<invalidemail>aish999999@yahoo.com</invalidemail>
+<invalidId>756</invalidId>
+</trackOrder>
+
+ </credentials>
